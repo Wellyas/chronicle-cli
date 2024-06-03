@@ -4,7 +4,7 @@ LABEL version="0.0.1"
 
 ENV CODE_WORKDIR="/opt/app"
 WORKDIR $CODE_WORKDIR
-COPY requirements_dev.txt .
+COPY requirements_* .
 RUN \
     apk update && apk add --no-cache \
     ca-certificates \
